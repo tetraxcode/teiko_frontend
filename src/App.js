@@ -44,7 +44,7 @@ function App() {
       <Navbar />
 
       <Intro />
-
+      <p className="w-full mx-20 my-10 font-medium text-3xl">Please upload a new file to start a new analysis or select other options to analyze data stored in the backend!</p>
       <div className="w-full mx-20">
         <div className="flex gap-4 flex-wrap">
           <button className="btn" onClick={toggleUpload}>Upload a new file!</button>
