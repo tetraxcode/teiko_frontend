@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const BACKEND_ADDRESS = "http://localhost:8000";
+const BACKEND_ADDRESS = process.env.REACT_APP_BACKEND_ADDRESS;
 
 const UploadBox = (props) => {
   const [selectedFile, setSelectedFile] = useState(null);

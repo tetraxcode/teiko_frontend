@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const BACKEND_ADDRESS = "http://localhost:8000";
+const BACKEND_ADDRESS = process.env.REACT_APP_BACKEND_ADDRESS;
 
 const HelloWorld = () => {
     const [message, setMessage] = useState("Loading...");

@@ -4,7 +4,7 @@ import Intro from "./components/Intro";
 import UploadBox from "./components/UploadBox";
 import Navbar from "./components/Navbar";
 
-const BACKEND_ADDRESS = "http://localhost:8000";
+const BACKEND_ADDRESS = process.env.REACT_APP_BACKEND_ADDRESS;
 
 const title1 = "Query to summarize the number of subjects available in each condition";
 const title2 = "Query that returns all melanoma PBMC samples at baseline (time_from_treatment_start is 0) from patients who have treatment tr1";
